@@ -25,9 +25,18 @@ const caveat = Caveat({
   display: "swap",
 });
 
+/**
+ * The link-preview image needs an absolute URL, and hardcoding one breaks the
+ * moment the site moves. Vercel injects the real production hostname at build
+ * time, so read that first and fall back to content.ts only for local dev.
+ * This means the preview card keeps working whatever the deployment is called.
+ */
+const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : content.meta.url;
+
 export const metadata: Metadata = {
-  // Absolute URLs for the preview card. Change this if the site moves.
-  metadataBase: new URL(content.meta.url),
+  metadataBase: new URL(siteUrl),
   title: content.meta.title,
   description: content.meta.description,
   openGraph: {
@@ -35,7 +44,7 @@ export const metadata: Metadata = {
     title: content.meta.title,
     description: content.meta.description,
     siteName: content.meta.title,
-    url: content.meta.url,
+    url: siteUrl,
     images: [
       {
         url: "/og.png",
