@@ -15,9 +15,11 @@ export const content = {
   meta: {
     title: "For Alaina",
     description: "A small place on the internet that only exists because of you.",
-    // Used for the WhatsApp/iMessage link preview. Update if the site moves to
-    // a custom domain.
-    url: "https://my-alaina.vercel.app",
+    // Used for the WhatsApp/iMessage link preview. Vercel's own
+    // VERCEL_PROJECT_PRODUCTION_URL wins over this when the project exposes
+    // system environment variables; this is the fallback. Update it if the
+    // site moves to a custom domain.
+    url: "https://my-alaina-airaffs-projects.vercel.app",
   },
 
   her: {
