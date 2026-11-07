@@ -177,6 +177,8 @@ export const content = {
     heading: "You complete me.",
     // His own words, set apart under the heading.
     strong: "I'm a strong man, but without my woman, I'm incomplete.",
+    // Her catchphrase, quoted back to her.
+    teasing: "Who am I without my “Bohot marungi apko”?",
     line: "No rush, no pressure. Take all the time you need, and whenever you want to talk, I'm one message away.",
     sticker: "/images/us-sticker.png",
     stickerAlt: "A little cartoon of the two of us",

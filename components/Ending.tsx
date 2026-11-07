@@ -46,6 +46,11 @@ export function Ending() {
           </p>
         </StaggerItem>
         <StaggerItem>
+          <p className="font-display mx-auto mt-4 text-[clamp(1.15rem,3.6vw,1.4rem)] italic leading-snug text-[#6e5a61]">
+            {ending.teasing}
+          </p>
+        </StaggerItem>
+        <StaggerItem>
           <p className="mx-auto mt-6 text-[15.5px] leading-[1.8] text-[#4d3b43] sm:text-[17px]">
             {ending.line}
           </p>
