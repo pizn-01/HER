@@ -16,7 +16,7 @@ export function Apology() {
         <div className="flex justify-center gap-4">
           {apology.gifs.map((src, i) => (
             <StaggerItem key={src}>
-              {/* eslint-disable-next-line @next/next/no-img-element -- animated GIF from Giphy; next/image would freeze it */}
+              {/* eslint-disable-next-line @next/next/no-img-element -- animated GIF; next/image would freeze it */}
               <img
                 src={src}
                 alt={apology.gifAlt}

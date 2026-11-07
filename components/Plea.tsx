@@ -17,7 +17,7 @@ const SPOTS: { x: number; y: number; peek?: boolean }[] = [
   { x: 0.96, y: 0.9 }, // bottom-right corner
   { x: 0.96, y: 0.1 }, // top-right corner
   { x: 0.04, y: 0.88 }, // bottom-left corner
-  { x: 1.0, y: 0.5, peek: true }, // hiding off the right edge
+  { x: 1.0, y: 0.5, peek: true }, // half-hiding at the right edge, still readable
   { x: 0.5, y: 0.06 }, // top middle
   { x: 0.04, y: 0.5 }, // left edge
 ];
@@ -68,7 +68,7 @@ export function Plea() {
     let left = spot.x * vw - btn.width / 2;
     let top = spot.y * vh - btn.height / 2;
     left = spot.peek
-      ? vw - btn.width * 0.4
+      ? vw - btn.width * 0.68
       : Math.min(Math.max(left, margin), vw - btn.width - margin);
     top = Math.min(Math.max(top, margin), vh - btn.height - margin);
 
@@ -94,7 +94,7 @@ export function Plea() {
     <section className="px-6 py-20 sm:py-28">
       <Stagger className="mx-auto max-w-md text-center" gap={0.14}>
         <StaggerItem>
-          {/* eslint-disable-next-line @next/next/no-img-element -- animated GIF from Giphy; next/image would freeze it */}
+          {/* eslint-disable-next-line @next/next/no-img-element -- animated GIF; next/image would freeze it */}
           <img
             src={plea.gif}
             alt={plea.gifAlt}

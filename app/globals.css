@@ -27,6 +27,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Nothing may widen the page: the runaway "Not yet" button and the heart
+   bursts can travel past the edge, and that must never let the page slide
+   sideways. clip (not hidden) keeps position: fixed/sticky working. */
+html,
+body {
+  overflow-x: clip;
+}
+
 /* Lenis momentum scrolling. Its own easing has to win over the CSS one,
    otherwise the two fight and scrolling stutters. */
 html.lenis,

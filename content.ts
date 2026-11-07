@@ -40,9 +40,9 @@ export const content = {
   apology: {
     label: "For my Dhakkan",
     heading: "I'm so sorry, jaan 🥺",
-    // GIFs shown under the heading. Add more links to this list any time.
+    // GIFs at the top of /sorry. Files live in public/gifs; add more any time.
     gifs: [
-      "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NnZ0MmJid2txOGllZDZ1ZDNqNTZidW45c2R0aXI3cTRobm43cTkxZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iBJ8NxKbqYImjdzgf7/giphy.gif",
+      "/gifs/sorry-bear.gif",
     ],
     gifAlt: "A little animation saying sorry",
     paragraphs: [
@@ -83,7 +83,7 @@ export const content = {
       "Okay last chance… 🥺",
       "Fine, not yet 😭",
     ],
-    gif: "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NHpydmlqaWsyZHJuMTRwam9jdHJoZzJ1dGRla2F3MXE5bjk0NzF5byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/D12oGnzOFoor1yDHta/giphy.gif",
+    gif: "/gifs/still-like-me.gif",
     gifAlt: "A little animation asking if you still like me",
     yesReply: "You just made me the happiest man alive 🥺💕 Message me, my Dhakkan?",
     notYetReply: "That's okay. I'll be right here, however long it takes 🥺",
