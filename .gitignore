@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Full-length song: only the trimmed loop in public/audio ships
+original-photos-backup/alfaaz-full.mp3

@@ -2,11 +2,15 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { FEATURE_AUDIO_EVENT } from "@/components/BackgroundMusic";
 import { content } from "@/content";
 
 const { interlude } = content;
 
 type Status = "idle" | "playing" | "blocked" | "done";
+
+const announce = (detail: "start" | "end") =>
+  window.dispatchEvent(new CustomEvent(FEATURE_AUDIO_EVENT, { detail }));
 
 /** Ease the volume up so it doesn't slam in over a silent page. */
 function fadeIn(audio: HTMLAudioElement) {
@@ -41,6 +45,7 @@ export function InterludeAudio() {
     audio
       .play()
       .then(() => {
+        announce("start");
         fadeIn(audio);
         setStatus("playing");
       })
@@ -115,6 +120,7 @@ export function InterludeAudio() {
     if (!audio) return;
     audio.pause();
     setStatus("done");
+    announce("end");
   };
 
   return (
@@ -129,7 +135,10 @@ export function InterludeAudio() {
         ref={audioRef}
         src={interlude.audio}
         preload="auto"
-        onEnded={() => setStatus("done")}
+        onEnded={() => {
+          setStatus("done");
+          announce("end");
+        }}
       />
 
       {/* Shown only when the browser blocked playback */}

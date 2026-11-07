@@ -50,7 +50,7 @@ export const content = {
   },
 
   letter: {
-    label: "Why this exists",
+    label: "Before anything else",
     heading: "I built you a garden",
     paragraphs: [
       "I'm a developer, so this is the only kind of flower I know how to grow. I couldn't find a card that said the right thing, so I wrote one from scratch.",
@@ -170,7 +170,27 @@ export const content = {
     bud: "This one's still closed. It's yours to give back, whenever you're ready.",
   },
 
-  /* The very last thing on the page. No ask, no deadline. */
+  /* Background song: plays softly on both pages once she first taps.
+     Drop the mp3 at this path; until it exists, the player stays hidden. */
+  music: {
+    src: "/audio/alfaaz.mp3",
+    // 1:10–2:05 of the song, cut into its own file with soft fades so the
+    // loop has no hard seam. Full track kept in original-photos-backup/.
+    title: "Alfaaz",
+    // Barely there: enough to notice, never enough to talk over.
+    volume: 0.13,
+    // Shown only when her browser blocks sound before a tap.
+    gateLabel: "For you, Alaina",
+    gateCta: "Tap to open",
+  },
+
+  /* /sorry: the apology page. */
+  sorry: {
+    meta: "I'm sorry, Alaina",
+    toGarden: "When you're ready, there's a whole garden I made for you",
+  },
+
+  /* The last thing on /sorry. No ask, no deadline. */
   ending: {
     label: "Whenever you're ready",
     // The last words on the page. Echoes the bottle and its dhakkan.

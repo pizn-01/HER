@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Caveat, Fraunces, Karla } from "next/font/google";
 import { content } from "@/content";
+import { BackgroundMusic } from "@/components/BackgroundMusic";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import "./globals.css";
 
@@ -86,6 +87,7 @@ export default function RootLayout({
           />
         </noscript>
         <SmoothScroll />
+        <BackgroundMusic />
         {children}
       </body>
     </html>
