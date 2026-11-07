@@ -99,6 +99,26 @@ export function Closing() {
       <div className="mx-auto max-w-2xl text-center">
         <FullBouquet active={inView} />
 
+        {/* The one flower deliberately left out of the bouquet: a closed bud
+            for her to "give back". It asks nothing, it just waits. */}
+        <motion.figure
+          className="mx-auto mt-6 flex max-w-xs items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 12 }}
+          animate={inView ? { opacity: 1, y: 0 } : undefined}
+          transition={{ duration: 0.8, delay: 1.1 }}
+        >
+          <svg width="58" height="110" viewBox="-22 -40 44 84" aria-hidden="true" className="shrink-0 -rotate-12">
+            <path d="M0 4 C 4 18, -4 30, 2 44" stroke="#8c9e86" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+            <path d="M1 22 C 12 16, 16 24, 2 28" fill="#8c9e86" opacity="0.85" />
+            <path d="M0 -34 C 9 -26, 10 -6, 0 6 C -10 -6, -9 -26, 0 -34 Z" fill="#f0c4cc" stroke="#e2a4b1" strokeWidth="1.2" />
+            <path d="M0 -30 C 3 -18, 2 -6, 0 4" stroke="#e2a4b1" strokeWidth="1" fill="none" />
+            <path d="M-6 0 C -3 6, 3 6, 6 0" fill="#8c9e86" />
+          </svg>
+          <figcaption className="font-[family-name:var(--font-hand)] text-left text-[1.25rem] leading-snug text-[#6e5a61]">
+            {closing.bud}
+          </figcaption>
+        </motion.figure>
+
         {/* Held back until the bouquet has finished assembling, then read out
             one line at a time. */}
         <Stagger gap={0.13} delay={0.55}>

@@ -16,6 +16,7 @@ const TILTS = [-2.4, 1.8, -1.1, 2.2, -1.9, 1.3, -2.7, 1.6];
 const SPOKEN_FOR = new Set<string>([
   ...content.memories.map((m) => m.image),
   content.wallet.image,
+  content.ending.sticker,
 ]);
 
 const LOOSE_PHOTOS = PHOTOS.filter((p) => !SPOKEN_FOR.has(p.src));

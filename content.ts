@@ -166,6 +166,23 @@ export const content = {
     ],
     signoff: "All my love,",
     from: "— your Bottle",
+    // The one flower left out of the bouquet, on purpose.
+    bud: "This one's still closed. It's yours to give back, whenever you're ready.",
+  },
+
+  /* The very last thing on the page. No ask, no deadline. */
+  ending: {
+    label: "Whenever you're ready",
+    // The last words on the page. Echoes the bottle and its dhakkan.
+    heading: "You complete me.",
+    // His own words, set apart under the heading.
+    strong: "I'm a strong man, but without my woman, I'm incomplete.",
+    line: "No rush, no pressure. Take all the time you need, and whenever you want to talk, I'm one message away.",
+    sticker: "/images/us-sticker.png",
+    stickerAlt: "A little cartoon of the two of us",
+    // International format, digits only, no + or spaces.
+    whatsapp: "923343365685",
+    button: "Message me on WhatsApp",
   },
 } as const;
 

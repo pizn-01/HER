@@ -53,6 +53,16 @@ export const PHOTOS: PhotoAsset[] = [
   { src: "/images/moment-41.jpg", w: 768, h: 1283 },
   { src: "/images/moment-42.jpg", w: 899, h: 1599 },
   { src: "/images/moment-43.jpg", w: 899, h: 1599 },
+  { src: "/images/moment-44.jpg", w: 1440, h: 1080 },
+  { src: "/images/moment-45.jpg", w: 1440, h: 1080 },
+  { src: "/images/moment-46.jpg", w: 1440, h: 1080 },
+  { src: "/images/moment-47.jpg", w: 1440, h: 1080 },
+  { src: "/images/moment-48.jpg", w: 1440, h: 1080 },
+  { src: "/images/moment-49.jpg", w: 1440, h: 1080 },
+  { src: "/images/moment-50.jpg", w: 1440, h: 1080 },
+  { src: "/images/moment-51.jpg", w: 1440, h: 1080 },
+  // Not in the gallery: used once, beside the WhatsApp button.
+  { src: "/images/us-sticker.png", w: 699, h: 639 },
 ];
 
 export const CLIPS: ClipAsset[] = [
@@ -63,6 +73,7 @@ export const CLIPS: ClipAsset[] = [
   { src: "/images/clip-05.mp4" },
   { src: "/images/clip-06.mp4" },
   { src: "/images/clip-07.mp4" },
+  { src: "/images/clip-08.mp4" },
 ];
 
 /** Look up baked dimensions for a photo referenced elsewhere by path. */
