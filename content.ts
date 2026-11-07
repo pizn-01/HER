@@ -36,8 +36,21 @@ export const content = {
     scrollCue: "Start here",
   },
 
+  /* The first thing she reads after the title. Kept short on purpose. */
+  apology: {
+    label: "First, this",
+    heading: "I know I messed up.",
+    paragraphs: [
+      "I'm not going to pretend otherwise, or explain it away. I hurt you, and you didn't deserve that.",
+      "This page isn't me trying to skip past it. I want to actually change. Not just say it, but show you, every day, until you can see it for yourself.",
+      "Take all the time you need. Whatever you decide, I want you in my life, Alaina. That part hasn't changed, and it won't.",
+    ],
+    signoff: "I'm sorry.",
+    from: "— your Bottle",
+  },
+
   letter: {
-    label: "Before anything else",
+    label: "Why this exists",
     heading: "I built you a garden",
     paragraphs: [
       "I'm a developer, so this is the only kind of flower I know how to grow. I couldn't find a card that said the right thing, so I wrote one from scratch.",

@@ -3,6 +3,7 @@ import { Clips } from "@/components/Clips";
 import { Closing } from "@/components/Closing";
 import { CornerBouquet } from "@/components/CornerBouquet";
 import { Gallery } from "@/components/Gallery";
+import { Apology } from "@/components/Apology";
 import { Hero } from "@/components/Hero";
 import { Interlude } from "@/components/Interlude";
 import { Letter } from "@/components/Letter";
@@ -16,6 +17,7 @@ export default function Home() {
     <BouquetProvider>
       <main>
         <Hero />
+        <Apology />
         <Letter />
         <Memories />
         <Interlude />

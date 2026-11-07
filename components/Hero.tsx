@@ -84,7 +84,7 @@ export function Hero() {
 
         <motion.a
           {...rise(0.95)}
-          href="#letter"
+          href="#note"
           className="group mt-14 inline-flex flex-col items-center gap-2 text-[11px] uppercase tracking-[0.28em] text-[#6e5a61] transition-colors hover:text-[#a8556c]"
         >
           {hero.scrollCue}
