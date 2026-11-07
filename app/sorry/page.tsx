@@ -3,6 +3,9 @@ import Link from "next/link";
 import { Apology } from "@/components/Apology";
 import { Bud } from "@/components/Bud";
 import { Ending } from "@/components/Ending";
+import { HeartShower } from "@/components/HeartShower";
+import { Plea } from "@/components/Plea";
+import { Promises } from "@/components/Promises";
 import { content } from "@/content";
 
 export const metadata: Metadata = {
@@ -16,7 +19,10 @@ export const metadata: Metadata = {
 export default function SorryPage() {
   return (
     <main className="pt-10">
+      <HeartShower />
       <Apology />
+      <Promises />
+      <Plea />
       <Bud />
       <Ending />
       <div className="-mt-24 pb-24 text-center sm:-mt-32">

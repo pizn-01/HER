@@ -38,15 +38,55 @@ export const content = {
 
   /* The first thing she reads after the title. Kept short on purpose. */
   apology: {
-    label: "First, this",
-    heading: "I know I messed up.",
-    paragraphs: [
-      "I'm not going to pretend otherwise, or explain it away. I hurt you, and you didn't deserve that.",
-      "This page isn't me trying to skip past it. I want to actually change. Not just say it, but show you, every day, until you can see it for yourself.",
-      "Take all the time you need. Whatever you decide, I want you in my life, Alaina. That part hasn't changed, and it won't.",
+    label: "For my Dhakkan",
+    heading: "I'm so sorry, jaan 🥺",
+    // GIFs shown under the heading. Add more links to this list any time.
+    gifs: [
+      "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NnZ0MmJid2txOGllZDZ1ZDNqNTZidW45c2R0aXI3cTRobm43cTkxZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iBJ8NxKbqYImjdzgf7/giphy.gif",
     ],
-    signoff: "I'm sorry.",
-    from: "— your Bottle",
+    gifAlt: "A little animation saying sorry",
+    paragraphs: [
+      "I know I messed up. Not a little, properly. And I hurt the one person I never, ever wanted to hurt.",
+      "I keep going back over it, and every single time I wish I could go back and just be better. You deserved better from me, and I didn't give it to you.",
+      "No excuses. No “but”. I was wrong, and I'm so, so sorry 🥺",
+      "I miss you. I miss your voice, your snaps, your “bohot marungi apko”. Nothing feels right without you in it.",
+      "I'm going to change. Not because I have to, but because you deserve someone who makes you feel safe and loved every single day, and I want that someone to be me.",
+    ],
+    signoff: "Please forgive me 🥺",
+    from: "— your Bottle, who misses you more than he can say",
+  },
+
+  /* Specific beats grand. Keep only the ones you'll actually do. */
+  promises: {
+    label: "What I promise you",
+    items: [
+      "I'll listen to understand you, not to defend myself.",
+      "I won't let you go to sleep upset with me.",
+      "I'll show you I've changed, not just tell you.",
+      "I'll make you laugh far more than I ever make you cry.",
+    ],
+  },
+
+  /* A question with a real "not yet". Neither answer sends anything. */
+  plea: {
+    question: "Will you forgive me? 🥺",
+    yes: "Yes 💕",
+    // It dodges once per label, then lets itself be caught on the last one.
+    notYetLabels: [
+      "Not yet",
+      "Are you sure? 🥺",
+      "Pakka?? 🥺🥺",
+      "Think again na 🥺",
+      "I'll make you chai ☕🥺",
+      "Can't catch me 😜",
+      "Pleaseee 🥺🥺🥺",
+      "Okay last chance… 🥺",
+      "Fine, not yet 😭",
+    ],
+    gif: "https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3NHpydmlqaWsyZHJuMTRwam9jdHJoZzJ1dGRla2F3MXE5bjk0NzF5byZlcD12MV9naWZzX3NlYXJjaCZjdD1n/D12oGnzOFoor1yDHta/giphy.gif",
+    gifAlt: "A little animation asking if you still like me",
+    yesReply: "You just made me the happiest man alive 🥺💕 Message me, my Dhakkan?",
+    notYetReply: "That's okay. I'll be right here, however long it takes 🥺",
   },
 
   letter: {
